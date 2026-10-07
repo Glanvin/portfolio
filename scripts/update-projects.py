@@ -92,6 +92,8 @@ def main():
 
     projects = []
     for r in repos:
+        if r.get("isFork"):
+            continue  # only show original repositories, not forks
         desc = (r.get("description") or "").strip()
         if not desc:
             desc = derive_description(read_readme(owner, r["name"]))

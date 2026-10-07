@@ -168,18 +168,6 @@
     "descSource": "none"
   },
   {
-    "name": "giftshop",
-    "description": "An online giftshop and reservation system for Capitol University. Students can browse the catalog, reserve items, and manage their reservations staff can manage the inventory, reservations, and view sales reports.",
-    "url": "https://github.com/Glanvin/giftshop",
-    "homepage": "",
-    "language": "PHP",
-    "stars": 0,
-    "private": false,
-    "fork": true,
-    "updatedAt": "2026-09-15T00:32:11Z",
-    "descSource": "readme"
-  },
-  {
     "name": "glanvin",
     "description": "My GitHub profile README — a quick intro to who I am and what I'm learning.",
     "url": "https://github.com/Glanvin/glanvin",
@@ -285,18 +273,6 @@
     "private": false,
     "fork": false,
     "updatedAt": "2025-10-23T17:14:09Z",
-    "descSource": "github"
-  },
-  {
-    "name": "sn0wfrogs-capybaras",
-    "description": "Add coconut doggies to your Minecraft world!",
-    "url": "https://github.com/Glanvin/sn0wfrogs-capybaras",
-    "homepage": "",
-    "language": "Java",
-    "stars": 0,
-    "private": false,
-    "fork": true,
-    "updatedAt": "2026-06-20T02:00:29Z",
     "descSource": "github"
   },
   {

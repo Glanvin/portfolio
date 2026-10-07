@@ -45,7 +45,7 @@ python3 scripts/update-projects.py            # uses your own account
 python3 scripts/update-projects.py SomeUser   # or another account
 ```
 
-It writes `data/projects.json`. Descriptions come from the repo description, then
+It writes `data/projects.json`. Forked repositories are skipped. Descriptions come from the repo description, then
 the README's first meaningful line, then `"No description yet."`.
 
 > Private repositories are included and flagged with a **Private** badge. Their

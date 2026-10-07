@@ -197,7 +197,7 @@
         return res.json();
       })
       .then(function (data) {
-        state.projects = sortProjects(data);
+        state.projects = sortProjects(data.filter(function (p) { return !p.fork; }));
         buildFilters();
         updateStats();
         render();
