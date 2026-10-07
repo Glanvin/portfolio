@@ -14,7 +14,7 @@ portfolio/
 ├── css/style.css           # dark theme by default, light theme toggle
 ├── js/main.js              # theme, nav, scroll reveal, project rendering
 ├── data/projects.json      # generated list of repositories
-├── assets/avatar.svg       # placeholder avatar — replace with your own
+├── assets/avatar.jpg       # GitHub profile picture
 ├── scripts/update-projects.py
 ├── .nojekyll               # tell GitHub Pages to serve files as-is
 └── README.md
@@ -27,14 +27,14 @@ Anything marked with `data-placeholder="true"` in `index.html` is a placeholder:
 - Name, title, and hero description (`#home`)
 - About paragraphs and facts (`#about`)
 - Skills (`#skills`)
-- Contact email and social links (`#contact`)
 - Footer name
 
-The **Projects** section (`#projects`) is rendered automatically from
+Contact links (email, GitHub, Discord, X) and the avatar are already set to real
+values. The **Projects** section (`#projects`) is rendered automatically from
 `data/projects.json` — do not edit it by hand.
 
-Replace `assets/avatar.svg` with your own image (keep the filename, or update the
-`<img src>` in `index.html`).
+Replace `assets/avatar.jpg` with your own image (it currently holds the GitHub
+profile picture).
 
 ## Refreshing the project list
 
