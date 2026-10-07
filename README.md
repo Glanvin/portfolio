@@ -10,7 +10,7 @@ project grid stays in sync with the repositories.
 
 ```
 portfolio/
-├── index.html              # page markup (all sections + placeholders)
+├── index.html              # page markup (all sections)
 ├── css/style.css           # dark theme by default, light theme toggle
 ├── js/main.js              # theme, nav, scroll reveal, project rendering
 ├── data/projects.json      # generated list of repositories
@@ -20,17 +20,13 @@ portfolio/
 └── README.md
 ```
 
-## Editing your info (placeholders)
+## Editing your info
 
-Anything marked with `data-placeholder="true"` in `index.html` is a placeholder:
+All personal info (name, about, skills, contact, avatar) is set to real values in
+`index.html` — edit the text directly there. Contact links are email, GitHub,
+Discord, and X.
 
-- Name, title, and hero description (`#home`)
-- About paragraphs and facts (`#about`)
-- Skills (`#skills`)
-- Footer name
-
-Contact links (email, GitHub, Discord, X) and the avatar are already set to real
-values. The **Projects** section (`#projects`) is rendered automatically from
+The **Projects** section (`#projects`) is rendered automatically from
 `data/projects.json` — do not edit it by hand.
 
 Replace `assets/avatar.jpg` with your own image (it currently holds the GitHub
