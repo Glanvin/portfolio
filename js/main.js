@@ -218,4 +218,17 @@
       render();
     });
   }
+
+  /* Animated gradient toggle (cyan <-> purple) */
+  try {
+    var gradEls = document.querySelectorAll(".gradient-text, .btn-primary, .hero-avatar");
+    gradEls.forEach(function (el) {
+      el.title = "Click to toggle gradient animation";
+      el.addEventListener("click", function (e) {
+        el.classList.toggle("is-paused");
+        e.stopPropagation();
+      });
+      el.style.cursor = "pointer";
+    });
+  } catch (e) {}
 })();

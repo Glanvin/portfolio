@@ -144,6 +144,28 @@ ul { margin: 0; padding: 0; list-style: none; }
   filter: blur(40px); opacity: 0.7; pointer-events: none;
 }
 
+/* Animated gradient shift (cyan <-> purple) */
+@keyframes gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-text,
+.btn-primary,
+.hero-avatar {
+  background-size: 300% 300%;
+  animation: gradient-shift 6s ease-in-out infinite;
+  animation-play-state: running;
+  will-change: background-position;
+}
+
+.gradient-text.is-paused,
+.btn-primary.is-paused,
+.hero-avatar.is-paused {
+  animation-play-state: paused;
+}
+
 /* ---------- Sections ---------- */
 .section { padding: clamp(56px, 8vw, 96px) 0; }
 .section-title { font-size: clamp(1.6rem, 3.4vw, 2.1rem); margin-bottom: 6px; display: flex; align-items: baseline; gap: 12px; }
@@ -227,6 +249,12 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
+  .gradient-text,
+  .btn-primary,
+  .hero-avatar {
+    animation: none;
+    background-size: 100% 100%;
+  }
 }
 
 /* ---------- Responsive ---------- */
